@@ -65,9 +65,10 @@ that simply returns HTML i.e. no nested components in it, consider using `render
 When your tests are failing and wish to debug, consider using the `debug()` function which returns a String representation of your component.
 
 Example usage:
-`const wrapper = mount(<MyComponentName />);
- console.log(wrapper.debug())
-`
+```
+    const wrapper = mount(<MyComponentName />);
+    console.log(wrapper.debug())
+```
 
 Other options include:
 * adding the `--debug` flag in your package.json on your scripts.test. This will allow you to use debugger statement within your test and have the debugger stop on those lines. This option will allow you to interact with the debugger from the command line.
